@@ -4,8 +4,8 @@
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #ff7010;
-  --secondary-color:              #000000;
-  --section-bg-color:             #000;
+  --secondary-color:              #000;/**/
+  --section-bg-color:             #000;/**/
   --dark-color:                   #000000;
   --p-color:                      #fff;
   --border-color:                 #ff7010;
@@ -213,13 +213,16 @@ strong {
   CUSTOM ICON               
 -----------------------------------------*/
 .navbar-icon {
-  background: var(--white-color);
+  background: var(--primary-color);
   border-radius: var(--border-radius-large);
-  color: var(--dark-color);
+  color: var(--white-color);
   width: 47px;
   height: 47px;
   line-height: 47px;
   text-align: center;
+  padding-top: 15;
+ 
+  
 }
 
 .is-sticky .navbar-icon {
@@ -245,15 +248,15 @@ strong {
   background: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: var(--white-color);
-  color: var(--white-color);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
   padding: 8px 22px;
 }
 
 .navbar .custom-btn:hover {
-  background: var(--white-color);
+  background: var(--primary-color);
   border-color: transparent;
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .custom-btn {
@@ -361,7 +364,8 @@ strong {
 
 .navbar-nav .nav-link {
   display: inline-block;
-  color: var(--section-bg-color);
+  color: var(--white-color);
+  /* color: #fff; */
   font-size: var(--menu-font-size);
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
@@ -383,12 +387,12 @@ strong {
 
 .navbar-nav .nav-link.active::after, 
 .navbar-nav .nav-link:hover::after {
-  background: var(--secondary-color);
+  background: var(--primary-color);
 }
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .navbar-toggler {
@@ -505,7 +509,7 @@ strong {
   height: 350px;
   position: absolute;
   z-index: 22;
-  top: -50px;
+  top: -30px;
   right: 0;
   left: 0;
   margin: auto;
@@ -515,22 +519,10 @@ strong {
 .hero-image {
   position: absolute;
   z-index: 22;
-  top: 0;
+  top: -70;
   width: 100%;
   min-width: 550px;
 }
-
-.hero svg {
-  position: absolute;
-  z-index: 2;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  overflow: hidden;
-  height: 100%;
-  pointer-events: none;
-}
-
 
 /*---------------------------------------
   ABOUT              
@@ -573,7 +565,6 @@ strong {
   padding-right: 20px;
   padding-left: 20px;
 }
-
 
 /*---------------------------------------
   FEATURED              
