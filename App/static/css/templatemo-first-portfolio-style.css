@@ -313,10 +313,12 @@ strong {
 .is-sticky .navbar-brand:hover {
   color: var(--dark-color);
   color: var(--white-color);
+ 
 }
 
 .is-sticky .navbar-nav .nav-link {
-  color: var(--p-color);
+  /* color: var(--p-color); */
+  color: #000;
 }
 
 .is-sticky .navbar .custom-btn {
